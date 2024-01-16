@@ -1,0 +1,154 @@
+.navbar{
+    padding: 20px 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: rgb(0, 0, 0);
+}
+.navbar .logo h1{
+    color: white;
+    cursor: pointer;
+    margin-left: 10px; /* Poussez les mots a droite de 10px*/
+}
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    border-bottom: 3px solid transparent; /* Nous permet de souligner le mot*/
+    margin-right: 10px; /* Poussez les mots A gauche de 10px*/
+    text-decoration: none; /* Mettre des décorations et enlever la barre qui se trouve en bas */
+    font-size: 15px; /*Modifier la taille des mots*/
+    font-weight: bold; /*Regler la Graticité des mots*/
+}
+.navbar .menu li .active{
+    border-bottom: 3px solid crimson;
+} 
+.navbar .menu li a:hover{
+    border-bottom: 3px crimson;
+} 
+.content{
+    margin-left: 0px; /* Poussez les mots a droite de 10px*/
+    display: flex; /*Positionner les elts soit en horizontal avec "flex" soit en vertical avec "block"*/
+    flex-direction: column; /* Pour regler le flex mise sur display */
+    align-items: flex-start;
+    font-size: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 30vh 5%; /*faire descendre en bas les mots ou phrase tjrs mettre à 0% pour que sa soit coller */
+    /* height: 100vh; */ /*Padding peut aussi remplacer height*/
+    color: rgb(235, 221, 34);
+    background-image: url(centrale.jpg); /*url nous permet d'acceder au fichier local*/
+}
+.content h1{
+    font-size: 40px;
+}
+.content p{
+    font-size: 25px;
+    color: rgb(246, 244, 244);
+    margin-top: 1px; /*L'espacement avec la ligne precedente*/
+}
+.content button{
+    cursor: pointer;
+    color: rgb(239, 235, 235);
+    margin-top: 30px;
+    padding: 8px;
+    background:crimson;
+    border: none; /*Border : les contours*/
+    border-radius: 5px; /*Mettre un raccord sur les bornes*/
+}
+.Texte{
+    margin-top: 10px;
+    cursor: default;
+    font-size: 40px;
+    margin-left: 550px;
+    color: rgb(255, 0, 0);
+}
+.section_produits{
+    padding: 10px 5%;
+}
+.Produits{
+    display: grid;
+    margin-left: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.Produits .carte{
+    width: 320px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    background: rgb(252, 252, 252);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.Produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+.Produits .carte .nom_du_produits{
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+.Produits .carte .desc{
+    color: black;
+    margin-left: 9px;
+    opacity: 0.9;
+}
+.Produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Produits .carte .prix{
+    font-weight: 500;
+    color:crimson;
+    font-size: 20px;
+}
+.Produits .carte .achat{
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: crimson;
+    font-weight: 600;
+    font-size: 20px;
+}
+.Produits .carte .achat:hover{
+    color: aliceblue;
+    background-color: rgb(39, 39, 30);
+}
+footer{
+    background-color: rgb(139, 120, 120);
+    margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+}
+footer .navbor{
+    display: flex;
+    flex-direction: column;
+}
+footer .navbor li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px;
+}
+footer .navbor li a{
+    color: rgb(251, 251, 251);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration:solid ;
+}
+footer .navbor li a:hover{
+    background-color: crimson;
+    color: black;
+    border-radius: 5px;
+}
